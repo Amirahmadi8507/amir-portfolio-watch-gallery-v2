@@ -37,7 +37,7 @@ import AdminSettings from "./pages/admin/AdminSettings";
 
 function App() {
   return (
-    <BrowserRouter basename="/amir-portfolio-watch-gallery">
+    <BrowserRouter basename="/amir-portfolio-watch-gallery-v2">
       <Routes>
         {/* سایت اصلی + فروشگاه (با هدر و فوتر عمومی) */}
         <Route element={<MainLayout />}>
