@@ -1,0 +1,63 @@
+// پالت رنگی هر سبک ساعت — بر اساس دسته‌بندی محصول انتخاب می‌شود
+export const WATCH_STYLES = {
+  luxury: {
+    caseColor: "#1b1d22",
+    caseMetal: 1,
+    caseRough: 0.22,
+    bezel: "#dc9468",
+    dial: "#0a0b0e",
+    index: "#f1d9c2",
+    hourHand: "#f1d9c2",
+    minuteHand: "#f1d9c2",
+    secondHand: "#dc9468",
+    strap: "metal",
+    strapColor: "#23262c",
+    accent: "#dc9468",
+  },
+  classic: {
+    caseColor: "#c9ccd2",
+    caseMetal: 1,
+    caseRough: 0.16,
+    bezel: "#e6e8ec",
+    dial: "#ece6d8",
+    index: "#1b1b1d",
+    hourHand: "#1b1b1d",
+    minuteHand: "#1b1b1d",
+    secondHand: "#b3402f",
+    strap: "leather",
+    strapColor: "#4a2a18",
+    accent: "#b3402f",
+  },
+  minimal: {
+    caseColor: "#d7b377",
+    caseMetal: 1,
+    caseRough: 0.2,
+    bezel: "#e8c98f",
+    dial: "#121316",
+    index: "#e8c98f",
+    hourHand: "#e8c98f",
+    minuteHand: "#e8c98f",
+    secondHand: "#ffffff",
+    strap: "leather",
+    strapColor: "#15171b",
+    accent: "#e8c98f",
+  },
+  sport: {
+    caseColor: "#2a2f38",
+    caseMetal: 0.85,
+    caseRough: 0.35,
+    bezel: "#3cb4be",
+    dial: "#0b1418",
+    index: "#7ff0f7",
+    hourHand: "#e8fdff",
+    minuteHand: "#e8fdff",
+    secondHand: "#ff7a45",
+    strap: "rubber",
+    strapColor: "#10171b",
+    accent: "#3cb4be",
+  },
+};
+
+export function getWatchStyle(category) {
+  return WATCH_STYLES[category] || WATCH_STYLES.luxury;
+}
